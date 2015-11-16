@@ -1,9 +1,11 @@
-cmake_minimum_required(VERSION 3.0.1)
+cmake_minimum_required(VERSION 3.1)
+
+SET(CMAKE_INSTALL_RPATH "../lib/")
+SET(CMAKE_INSTALL_PREFIX "/")
 
 project (Math)
 set(CMAKE_BUILD_TYPE Release)
-
-set(MAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 ADD_SUBDIRECTORY(shared_lib)
 ADD_SUBDIRECTORY(main)
